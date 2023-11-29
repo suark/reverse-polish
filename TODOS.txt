@@ -1,0 +1,4 @@
+[] unit tests
+[] basic UI
+[] improved UI that shows steps
+[] reorganize code
