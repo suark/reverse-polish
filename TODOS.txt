@@ -1,4 +1,10 @@
-[] unit tests
-[] basic UI
-[] improved UI that shows steps
-[] reorganize code
+[x] unit tests for calc functions
+[x] unit tests for components
+  [x] App
+  [x] calculator
+  [x] 100% code coverage
+[x] basic UI
+[x] reorganize code
+[x] add basic trig functions cos, sin, tan
+[x] comment all my files
+[x] re-read email instructions and assignment instructions
