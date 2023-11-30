@@ -5,4 +5,6 @@
   [x] 100% code coverage
 [x] basic UI
 [x] reorganize code
-[] comment all my files
+[x] add basic trig functions cos, sin, tan
+[x] comment all my files
+[x] re-read email instructions and assignment instructions
