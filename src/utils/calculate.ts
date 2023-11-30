@@ -76,6 +76,9 @@ function normalEvaluate(operand: string, leftOperatorAsNumber: number, rightOper
     case '*':
       return leftOperatorAsNumber * rightOperatorAsNumber
     case '/':
+      if (rightOperatorAsNumber === 0) {
+        throw new Error('Divide by zero')
+      }
       return leftOperatorAsNumber / rightOperatorAsNumber
     case '+':
       return leftOperatorAsNumber + rightOperatorAsNumber

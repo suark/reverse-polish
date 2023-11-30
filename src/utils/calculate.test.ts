@@ -39,6 +39,8 @@ const badInput2 = 'b'
 
 const badInput3 = 'tan cos tan'
 
+const badInput4 = '1 0 /'
+
 describe('reversePolishCalculate', () => {
   it(`returns the correct result: ${answer1}, for input: ${input1}`, () => {
     expect(reversePolishCalculate(input1)).toEqual(answer1)
@@ -99,6 +101,12 @@ describe('reversePolishCalculate', () => {
   it(`throws error: "Error evaluating improper Reverse Polish Notation", for bad input: ${badInput3}`, () => {
     expect(() => {
       reversePolishCalculate(badInput3)
+    }).toThrow('Error evaluating improper Reverse Polish Notation')
+  })
+
+  it(`throws error: "Error evaluating improper Reverse Polish Notation", for bad input: ${badInput4}`, () => {
+    expect(() => {
+      reversePolishCalculate(badInput4)
     }).toThrow('Error evaluating improper Reverse Polish Notation')
   })
 })
