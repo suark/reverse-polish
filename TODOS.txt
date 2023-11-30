@@ -1,4 +1,6 @@
-[] unit tests
+[x] unit tests for calc functions
+[] unit tests for components
 [] basic UI
 [] improved UI that shows steps
-[] reorganize code
+[] add "onSuccessfulStep" and "onBadStep" params
+[x] reorganize code
