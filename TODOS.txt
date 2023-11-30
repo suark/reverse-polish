@@ -1,6 +1,8 @@
 [x] unit tests for calc functions
-[] unit tests for components
-[] basic UI
-[] improved UI that shows steps
-[] add "onSuccessfulStep" and "onBadStep" params
+[x] unit tests for components
+  [x] App
+  [x] calculator
+  [x] 100% code coverage
+[x] basic UI
 [x] reorganize code
+[] comment all my files

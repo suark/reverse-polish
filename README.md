@@ -1,5 +1,12 @@
 # Reverse Polish Calculator
 
+## Installation Instructions
+
+Requires node and npm.
+
+- clone repository
+- run `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:

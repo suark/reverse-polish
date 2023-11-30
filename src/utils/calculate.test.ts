@@ -10,7 +10,8 @@ const input4 = '3 2 /'
 const answer4 = 1.5
 const input5 = '29 7 6 * - 5 + 92 + 2 /'
 const meaningOfLife = 42
-const badInput = 'C + + is a cool language, but not a RPN equation'
+const badInput1 = 'C + + is a cool language, but not an RPN equation'
+const badInput2 = 'b'
 
 describe('reversePolishCalculate', () => {
   it(`returns the correct result: ${answer1}, for input: ${input1}`, () => {
@@ -33,9 +34,15 @@ describe('reversePolishCalculate', () => {
     expect(reversePolishCalculate(input5)).toEqual(meaningOfLife)
   })
 
-  it(`throw error: Error evaluating improper Reverse Polish Notation, for bad input: ${badInput}`, () => {
+  it(`throw error: Error evaluating improper Reverse Polish Notation, for bad input: ${badInput1}`, () => {
     expect(() => {
-      reversePolishCalculate(badInput)
+      reversePolishCalculate(badInput1)
+    }).toThrow('Error evaluating improper Reverse Polish Notation')
+  })
+
+  it(`throw error: Error evaluating improper Reverse Polish Notation, for bad input: ${badInput2}`, () => {
+    expect(() => {
+      reversePolishCalculate(badInput2)
     }).toThrow('Error evaluating improper Reverse Polish Notation')
   })
 })

@@ -28,11 +28,18 @@ export function reversePolishCalculate(equation: string): number | undefined {
     const equationArray = equation.split(' ')
 
     if (equationArray.length === 1) {
-      return parseFloat(equation)
+      const finalValue = parseFloat(equation)
+
+      if (isNaN(finalValue)) {
+        throw new Error('Result is not a number')
+      }
+
+      return finalValue
     }
 
     for (let i = 0; i < equationArray.length; i++) {
       const operatorOrOperand = equationArray[i]
+
       if (isOperand(operatorOrOperand)) {
         const left = equationArray[i - 2]
         const right = equationArray[i - 1]
